@@ -22524,6 +22524,7 @@
 /obj/structure/table/wood,
 /obj/item/hand_tele,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/obj/item/book/LSDA,
 /turf/open/floor/wood,
 /area/command/heads_quarters/captain)
 "bfC" = (
@@ -59511,6 +59512,7 @@
 	lootcount = 4;
 	name = "4maintenance loot spawner"
 	},
+/obj/item/banhammer,
 /turf/open/floor/plating,
 /area/maintenance/starboard/fore)
 "nko" = (
@@ -66692,6 +66694,10 @@
 	},
 /turf/open/floor/plasteel,
 /area/commons/fitness/pool)
+"xbb" = (
+/obj/item/dildo/flared/gigantic,
+/turf/open/floor/plasteel,
+/area/science/robotics/lab)
 "xbi" = (
 /obj/machinery/atmospherics/pipe/simple/orange/hidden{
 	dir = 9
@@ -112494,7 +112500,7 @@ biN
 biL
 bni
 blM
-bou
+xbb
 cHX
 cIc
 biL

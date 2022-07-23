@@ -219,7 +219,7 @@
 	resistance_flags = FLAMMABLE
 	drop_sound = 'sound/items/handling/book_drop.ogg'
 	pickup_sound = 'sound/items/handling/book_pickup.ogg'
-	var/dat				//Actual page content
+	var/dat			//Actual page content
 	var/due_date = 0	//Game time in 1/10th seconds
 	var/author			//Who wrote the thing, can be changed by pen or PC. It is not automatically assigned
 	var/unique = FALSE	//false - Normal book, true - Should not be treated as normal book, unable to be copied, unable to be modified
@@ -380,6 +380,24 @@
 	to_chat(user, "\n")
 
 
+/obj/item/book/LSDA 
+	name = "La sensual doncella Kansiana"
+	icon = 'icons/obj/library.dmi'
+	icon_state ="book"
+	desc = "CULTURIZATE NIG..."
+	throw_speed = 1
+	throw_range = 5
+	w_class = WEIGHT_CLASS_NORMAL	 //upped to three because books are, y'know, pretty big. (and you could hide them inside eachother recursively forever)
+	attack_verb = list("bashed", "whacked", "educated")
+	resistance_flags = FLAMMABLE
+	drop_sound = 'sound/items/handling/book_drop.ogg'
+	pickup_sound = 'sound/items/handling/book_pickup.ogg'
+	var/dat	= "https://docs.google.com/document/d/1k75xz9nZZSlORsV0kEfvHwRq4QAD-TBS-0JPnBUwr1k/edit?usp=sharing"		//Actual page content
+	var/due_date = 5	//Game time in 1/10th seconds
+	var/author = "Kury-san"	//Who wrote the thing, can be changed by pen or PC. It is not automatically assigned
+	var/unique = TRUE	//false - Normal book, true - Should not be treated as normal book, unable to be copied, unable to be modified
+	var/title = "Kans explota nenes en palestina"		//The real name of the book.
+	var/window_size = null // Specific window size for the book, i.e: "1920x1080", Size x Width
 #undef BOOKCASE_UNANCHORED
 #undef BOOKCASE_ANCHORED
 #undef BOOKCASE_FINISHED
